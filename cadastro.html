@@ -27,12 +27,14 @@
                 <div class="col-md-4 offset-md-4">
                     <fieldset>
                         <form class="form-group">
-                            <input type="text" name="username" class="form-control" id="user" placeholder="Usuário">
+                            <label for="username">Digite um nome de usuario</label>
+                            <input type="text" name="username" class="form-control" id="user" placeholder="Nome de usuário">
+                            <label for="username">Digite uma senha que contenha pelo menos 6 dígitos</label>
                             <input type="password" name="password" class="form-control" id="pwd" placeholder="Senha">
-                            <input type="button" name="username" class="btn btn-dark form-control" id="btnLogin" value="Entrar">
-                            <p>Não é cadastrado?
-                                <a href="cadastro.html"> Cadastre-se aqui!</a>
-                            </p>
+                            <label for="username">Confirme a senha digitada</label>
+                            <input type="password" name="password" class="form-control" id="pwd" placeholder="Confirme a senha">
+                            <input type="button" name="username" class="btn btn-dark form-control" id="btnLogin" value="Cadastrar">
+
                         </form>
                     </fieldset>
                 </div>

@@ -2,6 +2,7 @@ const $levels = { "easy": 3, "medium": 5, "hard": 7 };
 const $imgWidth = 100;
 const $imgHeight = 80;
 $(document).ready(function() {
+    cadastro();
     fillboard();
     /*a cada vez que aperta o "play" insere uma toupeira em um buraco aleatório*/
     $("#btnPlay").click(function() {
@@ -61,4 +62,8 @@ function getRandNumber(min, max) {
 //seleciona o valor do nível: 3, 5 ou 7
 function getLevel() {
     return $levels[$("#level").val()]
+}
+//modal cadastro
+function cadastro() {
+    $('#cadastro').modal(options)
 }
